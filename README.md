@@ -5,7 +5,8 @@ This texture pack is a one-man project that began on 2016, now ready for its fir
 
 # What's New?
 ### `v0.1`
-- All stages now feature higher-quality textures. 
+- All stages now feature higher-quality textures.  
+  - There are also adjustments made to make the stages appear more vibrant.
 - Mob sprites are collected into respective folders.
 
 Screenshots
