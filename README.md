@@ -1,7 +1,7 @@
 # Tekken 6 HD Texure Pack
-![](https://i.imgur.com/DIH6Eu4.png)
+![](https://i.imgur.com/d86tdD5.png)
 
-This texture pack is a one-man project that began on 2016, now ready for release.
+This texture pack is a one-man project that began on 2016, now ready for its first stable release.
 
 # What's New?
 ### `v0.1`
