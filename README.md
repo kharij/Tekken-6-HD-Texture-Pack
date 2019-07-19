@@ -20,19 +20,20 @@ This texture pack is a one-man project that began on 2016, now ready for its fir
 ### `v0.1`
 - All stages now feature higher-quality textures.  
   - There are also adjustments made to make the stages appear more vibrant.
-- Mob sprites are collected into respective folders.
+- Mob sprites are collected into respective folders. (This is for future-proofing)
 
 Screenshots
-======
-> To be filled.
+======  
+> Click the images for a live comparison!  
+
+[![](https://i.imgur.com/45Tz4OF.jpg)](https://imgsli.com/NDcwNg "Mystical Forest")
+[![](https://i.imgur.com/x0xe6h5.jpg)](https://imgsli.com/NDcwNw "Rustic Asia")
 
 # Installation
-Create a folder named `ULUS10466` in `memstick\PSP\TEXTURES` and copy all the contents from the downloaded .zip file into it.  
+Create a folder, name it `ULUS10466` in `memstick\PSP\TEXTURES` and copy all the contents from the downloaded .zip file into it.  
 **Note:**
 - Turn any texture scaling options **OFF**.
 - Do **NOT** enable texture saving.
 - As much as possible, use Vulkan as the backend to decrease potential stuttering.
 
 
-# Downloads
-> To be filled.
