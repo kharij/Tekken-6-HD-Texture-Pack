@@ -1,45 +1,61 @@
+"use strict";
+
 // Load plugins
+const browsersync = require("browser-sync").create();
+const del = require("del");
 const gulp = require("gulp");
+const merge = require("merge-stream");
 
-// Copy third party libraries from /node_modules into /vendor
-gulp.task('vendor', function(cb) {
+// BrowserSync
+function browserSync(done) {
+  browsersync.init({
+    server: {
+      baseDir: "./"
+    },
+    port: 3000
+  });
+  done();
+}
 
-  // Start Bootstrap Clean Blog SCSS
-  gulp.src([
-      './node_modules/startbootstrap-clean-blog/scss/**/*'
-    ])
-    .pipe(gulp.dest('./assets/vendor/startbootstrap-clean-blog/scss'))
+// BrowserSync reload
+function browserSyncReload(done) {
+  browsersync.reload();
+  done();
+}
 
-  // Start Bootstrap Clean Blog JS
-  gulp.src([
-      './node_modules/startbootstrap-clean-blog/js/clean-blog.min.js',
-      './node_modules/startbootstrap-clean-blog/js/jqBootstrapValidation.js'
-    ])
-    .pipe(gulp.dest('./assets/vendor/startbootstrap-clean-blog/js'))
+// Clean vendor
+function clean() {
+  return del(["./vendor/"]);
+}
 
+// Bring third party dependencies from node_modules into vendor directory
+function modules() {
   // Bootstrap
-  gulp.src([
-      './node_modules/bootstrap/dist/**/*',
-      '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
-      '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
-    ])
-    .pipe(gulp.dest('./assets/vendor/bootstrap'))
-
+  var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
+    .pipe(gulp.dest('./vendor/bootstrap'));
   // jQuery
-  gulp.src([
+  var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./assets/vendor/jquery'))
+    .pipe(gulp.dest('./vendor/jquery'));
+  return merge(bootstrap, jquery);
+}
 
-  // Font Awesome
-  gulp.src([
-      './node_modules/@fortawesome/**/*',
-    ])
-    .pipe(gulp.dest('./assets/vendor'))
+// Watch files
+function watchFiles() {
+  gulp.watch("./**/*.css", browserSyncReload);
+  gulp.watch("./**/*.html", browserSyncReload);
+}
 
-  cb();
+// Define complex tasks
+const vendor = gulp.series(clean, modules);
+const build = gulp.series(vendor);
+const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
-});
-
-gulp.task("default", gulp.parallel('vendor'));
+// Export tasks
+exports.clean = clean;
+exports.vendor = vendor;
+exports.build = build;
+exports.watch = watch;
+exports.default = build;
