@@ -14,13 +14,13 @@ This texture pack is a one-man project that began on 2016, now ready for its fir
 # To-Do List
 - [x] Stage textures
 - [ ] Generic effects  
-*(i.e. Auras, Rage)*
+    *(i.e. Auras, Rage)*
 - [ ] Character-specific effects
 - [ ] HUD elements  
-*(i.e. Health bars, text, etc.)*
+    *(i.e. Health bars, text, etc.)*
 - [ ] Character textures
 - [ ] Mob sprites replacement  
-*(Due to how tricky this is, this will be low-priority for now)*
+    *(Due to how tricky this is, this will be low-priority for now)*
 - [ ] Support for other regions
 - [ ] Optimization for android phones
 
@@ -34,7 +34,7 @@ Screenshots
 # Installation
 In your PPSSPP directory, navigate to `memstick/PSP/TEXTURES` then drag n' drop the contents of the .zip into the folder.
 
-**Note:**
+**Note:**  
 - Turn any texture scaling options **OFF**.
 - Do **NOT** enable texture saving.
 - As much as possible, use Vulkan as the backend to decrease potential stuttering.
