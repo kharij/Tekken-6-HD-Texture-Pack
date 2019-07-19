@@ -32,7 +32,8 @@ Screenshots
 [![](https://i.imgur.com/x0xe6h5.jpg)](https://imgsli.com/NDcwNw "Rustic Asia")
 
 # Installation
-Create a folder, name it `ULUS10466` in `memstick\PSP\TEXTURES` and copy all the contents from the downloaded .zip file into it.  
+In your PPSSPP directory, navigate to `memstick/PSP/TEXTURES` then drag n' drop the contents of the .zip into the folder.
+
 **Note:**
 - Turn any texture scaling options **OFF**.
 - Do **NOT** enable texture saving.
