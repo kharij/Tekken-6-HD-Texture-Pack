@@ -13,16 +13,16 @@ This texture pack is a one-man project that began on 2016, now ready for its fir
 
 # To-Do List
 - [x] Stage textures
-- [ ] Generic effects  
+- [x] Generic effects  
     *(i.e. Auras, Rage)*
-- [ ] Character-specific effects
+- [x] Character-specific effects
 - [ ] HUD elements  
     *(i.e. Health bars, text, etc.)*
 - [ ] Character textures
 - [ ] Mob sprites replacement  
     *(Due to how tricky this is, this will be low-priority for now)*
 - [ ] Support for other regions
-- [ ] Optimization for android phones
+- [ ] Optimization for low-spec devices
 
 Screenshots
 ======  
