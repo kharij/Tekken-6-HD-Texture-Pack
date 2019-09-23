@@ -3,9 +3,15 @@
 
 This texture pack is a one-man project that began on 2016, now ready for its first stable release.
 
-[![GitHub release](https://img.shields.io/badge/release-v0.1-green.svg)](https://github.com/kharij/Tekken-6-HD-Texture-Pack/releases/latest)
+[![GitHub release](https://img.shields.io/badge/release-v0.2-green.svg)](https://github.com/kharij/Tekken-6-HD-Texture-Pack/releases/latest)
 
 # What's New?
+### `v0.2`
+- All effects are now replaced.
+- Added basic specular highlights during intros/outros and customization.
+- Fixed fire textures in Anger Of The Earth stage.
+- Minor fixes.
+
 ### `v0.1`
 - All stages now feature higher-quality textures.  
   - There are also adjustments made to make the stages appear more vibrant.
