@@ -6,6 +6,11 @@ This texture pack is a one-man project that began on 2016, now ready for its fir
 [![GitHub release](https://img.shields.io/badge/release-v0.2-green.svg)](https://github.com/kharij/Tekken-6-HD-Texture-Pack/releases/latest)
 
 # What's New?
+### `v0.3`
+- 90% of UI elements are replaced
+- BC1 artifact cleanups for certain stage textures.
+- Applied optimization on textures for small file sizes.
+
 ### `v0.2`
 - All effects are now replaced.
 - Added basic specular highlights during intros/outros and customization.
@@ -22,13 +27,13 @@ This texture pack is a one-man project that began on 2016, now ready for its fir
 - [x] Generic effects  
     *(i.e. Auras, Rage)*
 - [x] Character-specific effects
-- [ ] HUD elements  
-    *(i.e. Health bars, text, etc.)*
+- [x] UI elements  
+- [ ] Fonts
 - [ ] Character textures
 - [ ] Mob sprites replacement  
     *(Due to how tricky this is, this will be low-priority for now)*
 - [ ] Support for other regions
-- [ ] Optimization for low-spec devices
+- [ ] Optimization for mobile screens
 
 Screenshots
 ======  
