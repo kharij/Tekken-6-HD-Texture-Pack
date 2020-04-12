@@ -3,7 +3,7 @@
 
 This texture pack is a one-man project that began on 2016, now ready for its first stable release.
 
-[![GitHub release](https://img.shields.io/badge/release-v0.2-green.svg)](https://github.com/kharij/Tekken-6-HD-Texture-Pack/releases/latest)
+[![GitHub release](https://img.shields.io/badge/release-v0.3-green.svg)](https://github.com/kharij/Tekken-6-HD-Texture-Pack/releases/latest)
 
 # What's New?
 ### `v0.3`
